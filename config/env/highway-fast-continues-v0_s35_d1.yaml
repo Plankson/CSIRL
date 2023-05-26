@@ -1,0 +1,41 @@
+# @package _global_
+
+env:
+  name: highway-fast-v0
+  action_type: continues
+  density: 1
+  speed: 35
+  # learn_steps: 1e5
+  # eval_interval: 1e3
+
+  replay_mem: 1e6
+  # initial_mem: 10000
+  round_steps: 2e4
+  eps_steps: 100000
+  eval_interval: 1e3
+  expert_data: ${expert}
+  first_step: 5
+  delta: 5
+  sample_uc: 0.03
+  l_ego_s: 0
+  r_ego_s: 4
+  l_pos: 1
+  r_pos: 1
+  g1: 700.0
+expert:
+  subsample_freq: 1
+  basic_tra: "/expert_data/highway-fast-continues-v0-s35-d1/1.npy"
+  tra: "/expert_data/highway-fast-continues-v0-s35-d1/20.npy"
+
+agent:
+  name: sac
+
+num_actor_updates: 1
+
+train:
+  use_target: true
+  soft_update: true
+  batch: 256
+
+q_net:
+  _target_: model.sac_models.MultiQCritic

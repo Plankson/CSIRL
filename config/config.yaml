@@ -1,0 +1,39 @@
+exp_name: ''
+project_name: ${env.name}
+
+cuda_deterministic: False
+device: ??? # to be specified later
+use_rs: True
+gamma: 0.99
+seed: 0
+num_seed_steps: 0 # Don't need seeding for IL (Use 1000 for RL)
+soft_mean: True
+sigma: 0.2
+insert_subgoal_exp: False
+subgoal_num_actions: 1
+train:
+  batch: 64
+  use_target: False
+  soft_update: False
+expert:
+
+eval:
+  eps: 10
+
+env:
+  replay_mem: 50000
+  initial_mem: 1280
+  eps_steps: 1000
+  eval_interval: 1e3
+
+# Extra args
+hydra_base_dir: ""
+
+# Number of actor updates per env step
+num_actor_updates: 1
+
+
+defaults:
+  - agent: sac
+  - env: roundabout_continues_v1
+  - method: simple_sac

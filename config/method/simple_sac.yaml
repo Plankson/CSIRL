@@ -1,0 +1,14 @@
+# @package _global_
+
+method:
+  type: simple_sac
+
+  constrain: False
+  grad_pen: False
+  tanh: False
+  regularize: False
+  div:
+
+  alpha: 0.5
+  lambda_gp: 10
+  mix_coeff: 1

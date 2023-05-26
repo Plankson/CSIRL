@@ -1,0 +1,38 @@
+# @package _global_
+
+env:
+  name: merge-v0
+  action_type: continues
+  # learn_steps: 1e5
+  # eval_interval: 1e3
+
+  replay_mem: 1e6
+  # initial_mem: 10000
+  round_steps: 2e4
+  eps_steps: 100000
+  eval_interval: 1e3
+  expert_data: ${expert}
+  first_step: 5
+  delta: 5
+  sample_uc: 0.03
+  l_ego_s: 0
+  r_ego_s: 4
+  l_pos: 1
+  r_pos: 1
+  g1: 500.0
+expert:
+  basic_tra: "/expert_data/merge-continues-v0/1.npy"
+  tra: "/expert_data/merge-continues-v0/20.npy"
+
+agent:
+  name: sac
+
+num_actor_updates: 1
+
+train:
+  use_target: true
+  soft_update: true
+  batch: 256
+
+q_net:
+  _target_: model.sac_models.MultiQCritic
