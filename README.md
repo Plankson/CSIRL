@@ -23,6 +23,7 @@ Here we give the form  of the instructions.
 ```bash
 # The recorded data to plot the graph in the paper will be recorded in real time in /data/CSIRL/[env_name]/[trajectory_count]/[seed_id].pkl directory**
 python main.py env=[env_name]  expert.tra=[expert_dataset_directory] seed=[seed_id]
+
 # env_name:
 # highway-fast-continues-v0_s35_d1
 # merge-continues-v0
