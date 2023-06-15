@@ -2,7 +2,7 @@
 
 [![License: Apache](https://img.shields.io/badge/License-Apache-blue.svg)](LICENSE)
 
-Official codebase for paper [Curricular Subgoal for Inverse Reinforcement Learning](). This code is implemented based on Pytorch and evaluated on tasks from modified [highway-env](https://github.com/eleurent/highway-env) and please refer to that repo for more documentation.
+Official codebase for paper [Curricular Subgoal for Inverse Reinforcement Learning]().
 
 <div align="center">
 <img src="https://github.com/Plankson/CSIRL/blob/master/introduction.png" width="50%">
@@ -22,7 +22,7 @@ Official codebase for paper [Curricular Subgoal for Inverse Reinforcement Learni
 
 See `requirment.txt` file for more information about how to install the dependencies.
 
-#### Install Highway-env
+#### Install highway-env
 It should be noted that we make some modification on the original [highway-env](https://github.com/eleurent/highway-env) to make it more fit the real driving environment. The modified highway-env is provided by `highway_modify`, which can be installed by running:
 
 ```bash
