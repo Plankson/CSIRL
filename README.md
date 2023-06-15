@@ -52,6 +52,9 @@ python main.py env=intersection-continues-v0-o1 expert.tra=<EXPERT_DATASET_PATH>
 Make sure to replace `EXPERT_DATASET_PATH` with the path to the corresponding dataset in `expert_data`.
 
 
+![image](https://github.com/Plankson/CSIRL/blob/master/exp-highway.png)
+
+
 ## Citation
 
 If you find this work useful for your research, please cite our paper:
