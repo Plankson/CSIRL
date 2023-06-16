@@ -1,8 +1,10 @@
 # Curricular Subgoal for Inverse Reinforcement Learning
 
 [![License: Apache](https://img.shields.io/badge/License-Apache-blue.svg)](LICENSE)
+[![arXiv](https://img.shields.io/badge/arXiv-2306.08232-b31b1b.svg)](https://arxiv.org/abs/2306.08232)
 
-Official codebase for paper [Curricular Subgoal for Inverse Reinforcement Learning]().
+
+Official codebase for paper [Curricular Subgoal for Inverse Reinforcement Learning](https://arxiv.org/abs/2306.08232).
 
 <div align="center">
 <img src="https://github.com/Plankson/CSIRL/blob/master/introduction.png" width="50%">
@@ -63,6 +65,7 @@ If you find this work useful for your research, please cite our paper:
 @article{liu2023CSIRL,
   title={Curricular Subgoal for Inverse Reinforcement Learning},
   author={Liu, Shunyu and Qing, Yunpeng and Xu, Shuqi and Wu, Hongyan and Zhang, Jiangtao and Cong, Jingyuan and Liu, Yunfu and Song, Mingli},
+  journal={arXiv preprint arXiv:2306.08232},
   year={2023}
 }
 ```
