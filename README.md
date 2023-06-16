@@ -57,6 +57,8 @@ Make sure to replace `EXPERT_DATASET_PATH` with the path to the corresponding da
 ![image](https://github.com/Plankson/CSIRL/blob/master/exp-highway.png)
 
 
+![image](https://github.com/Plankson/CSIRL/blob/master/exp-highway-table.png)
+
 ## Citation
 
 If you find this work useful for your research, please cite our paper:
