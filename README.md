@@ -22,7 +22,7 @@ Official codebase for paper [Curricular Subgoal for Inverse Reinforcement Learni
 
 #### Install dependencies
 
-See `requirment.txt` file for more information about how to install the dependencies.
+See `requirments.txt` file for more information about how to install the dependencies.
 
 #### Install highway-env
 It should be noted that we make some modification on the original [highway-env](https://github.com/eleurent/highway-env) to make it more fit the real driving environment. The modified highway-env is provided by `highway_modify`, which can be installed by running:
